@@ -12,14 +12,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
-
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"> -->
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__wrapper">
+      <a href="#">
+        <img src="images/logo.svg" alt="logo" class="header__logo" id="logo">
+      </a>
 
-      <img src="images/logo.svg" alt="logo" class="header__logo">
 
 
       <ul class="header__menu">
@@ -41,6 +45,101 @@
       <button class="intro__button">Найти тур</button>
     </div>
   </div>
+  <section class="choice-tour">
+    <div class="choice-tour__wrapper">
+      <h2 class="choice-tour__title">Выбери свой тур</h2>
+      <div class="tabs">
+        <div class="tabs__header">
+          <div class="tabs__header-item active" data-tab="tab-1">Популярные</div>
+          <div class="tabs__header-item" data-tab="tab-2">Авторские</div>
+          <div class="tabs__header-item" data-tab="tab-3">Походы</div>
+          <div class="tabs__header-item" data-tab="tab-4">Сплавы</div>
+          <div class="tabs__header-item" data-tab="tab-5">Велопрогулки</div>
+        </div>
+        <div class="tabs__body">
+          <div class="tabs__body-content tab-1 active">
+            <div class="card" id="card_1">
+              <div class="card__background">
+                <div class="card__title">
+                  <h3>Путешествие в горы</h3>
+                  <p>от 80 000 руб</p>
+                </div>
+                <div class="card__button">
+                  <a href="" class="card__button-link">Подробнее<img src="images/arrow.svg" alt=""
+                      class="card__button-image"></a>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="card_2">
+              <div class="card__background">
+                <div class="card__title">
+                  <h3>Путешествие в горы</h3>
+                  <p>от 80 000 руб</p>
+                </div>
+                <div class="card__button">
+                  <a href="" class="card__button-link">Подробнее<img src="images/arrow.svg" alt=""
+                      class="card__button-image"></a>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="card_3">
+              <div class="card__background">
+                <div class="card__title">
+                  <h3>Путешествие в горы</h3>
+                  <p>от 80 000 руб</p>
+                </div>
+                <div class="card__button">
+                  <a href="" class="card__button-link">Подробнее<img src="images/arrow.svg" alt=""
+                      class="card__button-image"></a>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="card_4">
+              <div class="card__background">
+                <div class="card__title">
+                  <h3>Путешествие в горы</h3>
+                  <p>от 80 000 руб</p>
+                </div>
+                <div class="card__button">
+                  <a href="" class="card__button-link">Подробнее<img src="images/arrow.svg" alt=""
+                      class="card__button-image"></a>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="card_5">
+              <div class="card__background">
+                <div class="card__title">
+                  <h3>Путешествие в горы</h3>
+                  <p>от 80 000 руб</p>
+                </div>
+                <div class="card__button">
+                  <a href="" class="card__button-link">Подробнее<img src="images/arrow.svg" alt=""
+                      class="card__button-image"></a>
+                </div>
+              </div>
+            </div>
+            <div class="card" id="card_6">
+              <div class="card__background">
+                <div class="card__title">
+                  <h3>Путешествие в горы</h3>
+                  <p>от 80 000 руб</p>
+                </div>
+                <div class="card__button">
+                  <a href="" class="card__button-link">Подробнее<img src="images/arrow.svg" alt=""
+                      class="card__button-image"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__body-content tab-2">222</div>
+          <div class="tabs__body-content tab-3">33</div>
+          <div class="tabs__body-content tab-4">4</div>
+          <div class="tabs__body-content tab-5">5</div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+<script src="script.js"></script>
 
 </html>
