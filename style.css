@@ -46,6 +46,7 @@ body {
   backdrop-filter: blur(27px);
   top: 0;
   left: 0;
+  z-index: 111;
 }
 .header.fixed .menu__item__btn,
 .header.fixed .header__phone {
@@ -215,6 +216,7 @@ body {
   border-radius: 50px;
   background-position: center;
   transition: background-size 0.3s ease;
+  cursor: pointer;
 }
 .card__background {
   box-sizing: border-box;
@@ -235,6 +237,14 @@ body {
 }
 .card:hover {
   background-size: 120% auto;
+}
+.card:hover .card__button {
+  background: #286562;
+  border-radius: 50px;
+}
+.card:active .card__button {
+  background: #efa501;
+  border-radius: 50px;
 }
 .card__title {
   display: flex;
@@ -278,14 +288,6 @@ body {
   height: 28px;
   cursor: pointer;
 }
-.card__button:hover {
-  background: #286562;
-  border-radius: 50px;
-}
-.card__button:active {
-  background: #efa501;
-  border-radius: 50px;
-}
 .card__button-image {
   height: 15px;
   width: 22px;
@@ -308,6 +310,282 @@ body {
 #card_6 {
   background-image: url(images/card_6.jpg);
 }
+/* custom-tour */
+.custom-tour {
+  margin: 0 auto;
+  margin-top: 135px;
+  max-width: 1170px;
+  margin-bottom: 500px;
+}
+.custom-tour__title_wrapper {
+  height: 159px;
+  width: 458px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.custom-tour__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 124%;
+  text-align: center;
+  color: #1b1f2b;
+}
+.custom-tour__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  text-align: center;
+  color: #a6a6a6;
+}
+.custom-tour__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 70px;
+  background: #ffffff;
+  border-radius: 50px;
+}
+.custom-tour__form_wrapper {
+  margin-top: 100px;
+}
+.form__item p {
+  margin-bottom: 8px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  color: #1b1f2b;
+}
+.custom-tour__form input::-webkit-input-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  color: #a6a6a6;
+}
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.custom-tour__form input[type="date"],
+.custom-tour__form input[type="text"],
+.custom-tour__form input[type="tel"],
+.custom-tour__form select {
+  height: 66px;
+  width: 498px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f9f7f4;
+  border: 1px solid #f4f0e9;
+  border-radius: 10px;
+  flex: 0 1 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  /* or 28px */
+
+  /* Black */
+
+  color: #1b1f2b;
+}
+.custom-tour__form input[type="date"]:hover,
+.custom-tour__form input[type="text"]:hover,
+.custom-tour__form input[type="tel"]:hover,
+.custom-tour__form select:hover {
+  background: #f4f0e9;
+}
+.custom-tour__form input[type="date"]:focus,
+.custom-tour__form input[type="text"]:focus,
+.custom-tour__form input[type="tel"]:focus,
+.custom-tour__form select:focus {
+  background: #f4f0e9;
+  outline: none;
+  border: 1px solid #a6a6a6;
+}
+.custom-tour__form input[type="date"] {
+  color: #a6a6a6;
+}
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.form__item-radio {
+  display: none;
+}
+.form__item-radio_custom {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: solid 5px #ffffff;
+  outline: solid 2px #1b1f2b;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.form__item-radio:checked + .form__item-radio_custom {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #1b1f2b;
+  border-radius: 50%;
+  border: solid 5px #ffffff;
+  outline: solid 2px #1b1f2b;
+}
+.form__item-radio_wrapper {
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  color: #1b1f2b;
+  align-items: center;
+}
+.form__item-radio_wrapper._gap {
+  gap: 30px;
+}
+.form__item-check_custom {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #1b1f2b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form__item-check:checked + .form__item-check_custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-image: url(images/checkbox.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.form__item-check {
+  display: none;
+}
+.form__item._check {
+  display: flex;
+  flex-direction: row;
+  gap: 11px;
+  margin-top: 35px;
+}
+.form__item-btn._green {
+  color: #ffffff;
+
+  background: #286562;
+}
+.form__item-btn._green:hover {
+  background: #3b7e7b;
+}
+.form__item-btn._green:active {
+  background: #627f7e;
+}
+.form__item-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  gap: 10px;
+  width: 235px;
+  height: 58px;
+  background: #e0f0e5;
+  border-radius: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  color: #286562;
+  border: 0;
+  cursor: pointer;
+}
+.form__item-btn:hover {
+  background: #f1f3f2;
+}
+.form__item-btn:active {
+  background: #d9dfdb;
+}
+.form__item._btn {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.form__text_gray {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 142%;
+  letter-spacing: -0.01em;
+  color: #a6a6a6 !important;
+  height: 24px;
+  margin: 0 !important;
+}
+.form__text_black {
+  color: #1b1f2b;
+}
+.form__item._select {
+  position: relative;
+}
+.form__item._select::before {
+  content: "";
+  position: absolute;
+  display: block;
+
+  background-image: url("images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 20px;
+  width: 26px;
+  height: 26px;
+  z-index: 100;
+  right: 20px;
+}
+.form__input-text {
+  padding: 20px;
+  gap: 10px;
+  display: block;
+  width: 1030px;
+  height: 152px;
+  background: #f9f7f4;
+  border: 1px solid #f4f0e9;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.custom-tour__form select {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  color: #a6a6a6;
+}
+
+#comment {
+  width: 1030px;
+  height: 152px;
+}
+
 /* adaptive */
 @media (max-width: 1170px) {
   .card,
@@ -409,8 +687,8 @@ body {
     text-align: left;
   }
   .card__button,
-  .card__button:hover,
-  .card__button:active {
+  .card:hover .card__button,
+  .card:active .card__button {
     gap: 15px;
     height: 26px;
     width: 123px;
