@@ -1267,10 +1267,6 @@ input::-webkit-calendar-picker-indicator {
   #hidden_2 {
     display: none;
   }
-}
-@media (max-width: 360px) {
-  /* header */
-
   .header__menu {
     display: none;
   }
@@ -1291,6 +1287,9 @@ input::-webkit-calendar-picker-indicator {
     padding: 0 20px;
     align-items: center;
   }
+}
+@media (max-width: 360px) {
+  /* header */
 
   .intro__subtitle {
     width: 310px;
