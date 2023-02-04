@@ -78,8 +78,7 @@ body {
 .intro {
   background: url(images/header-background.jpg) no-repeat center;
   height: 830px;
-  width: 100vw;
-  min-width: 100vw;
+  max-width: 100vw;
   margin: 0;
 }
 .intro__wrapper {
@@ -684,6 +683,91 @@ input::-webkit-calendar-picker-indicator {
   line-height: 122%;
   color: #1b1f2b;
 }
+/* photo block */
+.photo {
+  margin: 0 auto;
+
+  width: 100%;
+}
+.photo__title_wrapper {
+  margin: 0 auto;
+  padding: 0px;
+  gap: 30px;
+  width: 726px;
+  height: 159px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  margin-top: 135px;
+}
+.photo__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 59px;
+  line-height: 124%;
+  text-align: center;
+  color: #1b1f2b;
+  width: 726px;
+  height: 73px;
+}
+.photo__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 142%;
+  text-align: center;
+  color: #a6a6a6;
+  width: 418px;
+  margin: 0 auto;
+}
+.photo__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 30px;
+}
+
+.photo__item {
+  border-radius: 50px;
+}
+.photo__item._first-line {
+  height: 300px;
+  max-width: 442px;
+}
+.photo__item._second-line {
+  height: 300px;
+  max-width: 347.32px;
+}
+.photo__item._third-line {
+  height: 300px;
+  max-width: 442px;
+}
+._first-line {
+}
+.photo__first-line,
+.photo__third-line {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  gap: 30px;
+}
+.photo__second-line {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+}
+
+._second-line {
+}
+._third-line {
+}
+
 /* adaptive */
 @media (max-width: 1170px) {
   .card,
@@ -793,6 +877,37 @@ input::-webkit-calendar-picker-indicator {
     max-width: 1170px;
     justify-items: center;
     justify-content: center;
+  }
+  .photo {
+  }
+  .photo__title_wrapper {
+  }
+  .photo__title {
+  }
+  .photo__subtitle {
+  }
+  .photo__wrapper {
+  }
+  .photo__first-line {
+    gap: 20px;
+  }
+  .photo__item._first-line {
+    width: 314.67px;
+  }
+  .photo__second-line {
+    gap: 20px;
+  }
+  ._second-line {
+    width: 231px;
+  }
+  .photo__third-line {
+    gap: 20px;
+  }
+  ._third-line {
+    width: 314.67px;
+  }
+  #hidden {
+    display: none;
   }
 }
 
@@ -1078,6 +1193,77 @@ input::-webkit-calendar-picker-indicator {
 @media (max-width: 650px) {
   .intro__subtitle {
     width: 100vw;
+  }
+  .photo {
+  }
+  .photo__title_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 21px;
+    gap: 20px;
+
+    width: 360px;
+    height: 142px;
+    padding: 0;
+  }
+  .photo__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 112%;
+    /* or 38px */
+
+    text-align: center;
+    letter-spacing: 0.02em;
+    width: 318px;
+    height: 76px;
+  }
+  .photo__subtitle {
+    width: 318px;
+    height: 46px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 142%;
+    text-align: center;
+    color: #a6a6a6;
+  }
+  .photo__wrapper {
+    margin: 0 20px;
+  }
+  .photo__first-line {
+    gap: 18px;
+  }
+  .photo__item._first-line {
+    width: 150px;
+    height: 110px;
+    border-radius: 20px;
+  }
+  .photo__second-line {
+    gap: 10px;
+  }
+  .photo__item._second-line {
+    width: 99.33px;
+    height: 110px;
+    border-radius: 20px;
+  }
+  .photo__third-line {
+    gap: 18px;
+  }
+  .photo__item._third-line {
+    width: 150px;
+    height: 110px;
+    border-radius: 20px;
+  }
+  #hidden {
+    display: none;
+  }
+  #hidden_2 {
+    display: none;
   }
 }
 @media (max-width: 360px) {
