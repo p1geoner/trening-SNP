@@ -1207,6 +1207,8 @@ input::-webkit-calendar-picker-indicator {
     width: 360px;
     height: 142px;
     padding: 0;
+    margin-top: 75px;
+    margin-bottom: 50px;
   }
   .photo__title {
     font-family: "Roboto";
