@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>YourTour</title>
 
   <link rel="stylesheet" href="style.css">
@@ -145,51 +146,51 @@
       <p class="custom-tour__subtitle">Идейные соображения высшего порядка,а также рамки и место обучения кадров</p>
     </div>
     <div class="custom-tour__form_wrapper">
-      <form action="" method="post" class="custom-tour__form">
+      <form action="" method="post" class="custom-tour__form" id="form">
         <div class="form__item">
-          <p>Имя</p><input type="text" placeholder="Введите Ваше имя">
+          <p>Имя</p><input form="form" type="text" placeholder="Введите Ваше имя">
         </div>
         <div class="form__item _select">
           <p>Направление</p>
-          <select name="select" id="">
+          <select name="select" id="" form="form">
             <option id="placeholder" value="" disabled selected hidden>Куда хотите поехать</option>
-            <option value="">Грузия</option>
-            <option value="">Египед</option>
+            <option value="1">Грузия</option>
+            <option value="2">Египед</option>
           </select>
         </div>
         <div class="form__item">
-          <p>Email</p><input type="text" name="" id="" placeholder="example@mail.com">
+          <p>Email</p><input form="form" type="text" name="" id="" placeholder="example@mail.com">
         </div>
         <div class="form__item">
-          <p>Телефон</p><input type="tel" name="" id="" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+          <p>Телефон</p><input form="form" type="tel" name="" id="" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
         </div>
         <div class="form__item">
-          <p>Дата от</p><input type="date" name="" id="" placeholder="ДД.ММ.ГГГГ">
+          <p>Дата от</p><input form="form" type="date" name="" id="" placeholder="ДД.ММ.ГГГГ">
         </div>
         <div class="form__item">
-          <p>Дата до</p><input type="date" name="" id="" placeholder="ДД.ММ.ГГГГ">
+          <p>Дата до</p><input form="form" type="date" name="" id="" placeholder="ДД.ММ.ГГГГ">
         </div>
         <div class="form__item _big">
-          <p>Комментарий</p><input type="text" name="" id="comment" class="form__input-text">
+          <p>Комментарий</p><textarea name="" id="comment" class="form__input-text"></textarea>
         </div>
         <div class="form__item_wrapper">
           <div class="form__item">
             <p>Вам есть 18 лет?</p>
             <div class="form__item-radio_wrapper _gap">
               <div class="form__item-radio_wrapper">
-                <input type="radio" name="radio" id="r1" class="form__item-radio">
+                <input form="form" type="radio" name="radio" id="r1" class="form__item-radio">
                 <label class="form__item-radio_custom" for="r1" id="r1_label"></label>
                 <span>Да</span>
               </div>
               <div class="form__item-radio_wrapper">
-                <input type="radio" name="radio" id="r2" class="form__item-radio">
+                <input form="form" type="radio" name="radio" id="r2" class="form__item-radio">
                 <label class="form__item-radio_custom" for="r2"></label>
                 <span>Нет</span>
               </div>
             </div>
           </div>
           <div class="form__item _check">
-            <input type="checkbox" name="" id="check1" class="form__item-check">
+            <input form="form" type="checkbox" name="" id="check1" class="form__item-check">
             <label class="form__item-check_custom" for="check1"></label>
             <p class="form__text_gray">Нажимая кнопку, я принимаю условия <span class="form__text_black">Лицензионного
                 договора</span></p>
@@ -203,9 +204,50 @@
       </form>
     </div>
   </section>
+  <section class="feedback">
+    <div class="feedback__title_wrapper">
+      <h2 class="feedback__title">Отзывы наших путешественников</h2>
+      <p class="feedback__subtitle">Идейные соображения высшего порядка, а также рамки и место обучения кадров</p>
+    </div>
+    <div class="feedback_wrapper">
+      <div class="feedback__item">
+        <div class="feedback__item-text">
+          <p>Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу
+            (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало
+            повседневной работы по формированию позиции позволяет оценить значение модели развития.</p>
+        </div>
+        <div class="feedback__person">
+          <div class="feedback__person_wrapper-1">
+            <p class="feedback__person-text _black">Мария</p>
+            <p class="feedback__person-text">Тур: Вдали от дома</p>
+          </div>
+          <div class="feedback__person_wrapper-2"><img src="images/feedback photo-1.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="feedback__item">
+        <div class="feedback__item-text">
+          <p>Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании
+            системы обучения кадров, соответствует насущным потребностям.
+
+          </p>
+          <br>
+          <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности
+            обеспечивает
+            широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает,
+            что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.
+          </p>
+        </div>
+        <div class="feedback__person">
+          <div class="feedback__person_wrapper-1">
+            <p class="feedback__person-text _black">Павел</p>
+            <p class="feedback__person-text">Тур: Путешествие в горы </p>
+          </div>
+          <div class="feedback__person_wrapper-2"><img src="images/feedback photo-2.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 <script src="script.js"></script>
-
-
 
 </html>
