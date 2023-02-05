@@ -1610,6 +1610,12 @@ input::-webkit-calendar-picker-indicator {
     padding: 0px;
     gap: 23px;
   }
+  .footer__menu-item img {
+    margin-right: 6px;
+  }
+  .footer__menu {
+    width: 314px;
+  }
 }
 @media (max-width: 360px) {
   .intro__subtitle {
@@ -1650,11 +1656,5 @@ input::-webkit-calendar-picker-indicator {
   }
   .story {
     height: fit-content;
-  }
-  .footer__menu-item img {
-    margin-right: 6px;
-  }
-  .footer__menu {
-    width: 314px;
   }
 }
